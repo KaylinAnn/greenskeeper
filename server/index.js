@@ -8,15 +8,13 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.get('/api/alltemps', controller.readAllTemps)
+app.post('/api/alltemps', controller.readAllTemps)
 
 const uri = process.env.CONNECTION_STRING
 massive(uri)
   .then(db => {
     app.set('db', db)
     console.log(':) db')
-    var jsonDate = (new Date()).toJSON();
-    console.log(jsonDate);
 
 
   })
