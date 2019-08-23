@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Temp from '../temp/temp'
+import Moisture from '../moisture/moisture'
 import './dashboard.css'
 
 function Dashboard() {
@@ -25,6 +26,7 @@ function Dashboard() {
         </div>
         <div className='plant-moisture-container'>
           <div className='moisture-label'>MOISTURE</div>
+          <div className='moisture-container'><Moisture /></div>
         </div>
       </div>
     </div>

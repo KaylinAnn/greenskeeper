@@ -8,12 +8,22 @@ function Moisture() {
   // useEffect(() => {
 
   // })
+  const arr = ['Spider Plant', 'Gold Dust', 'Cactus', 'blahblah', 'someplant']
+
+  const allPlants = arr.map(plant => {
+    return (
+      <div className='moisture'>
+        <div className='mapped-plants'>
+          |
+        </div>
+        <div className='plant-name'>{plant}</div>
+      </div>
+    )
+  })
 
   return (
-    <div className='Moisture'>
-      <div className='mapped-plants'>
-
-      </div>
+    <div className='moisture'>
+      {allPlants}
     </div>
   )
 }

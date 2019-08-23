@@ -1,0 +1,15 @@
+.moisture{
+  /* background: forestgreen; */
+  width: 100%;
+}
+
+.mapped-plants{
+  margin-top: 25px;
+  font-size: 30px;
+  text-align: center;
+  height: 5%;
+  width: 100%;
+  background-image: linear-gradient(to right, #ff8b74, #ff9f6d, #ffb468, #ffca68, #ffe06e, #f8ea71, #eff575, #e4ff7d, #cfff7f, #b8ff83, #9fff8a, #82ff92);
+  border: 1px solid black;
+  border-radius: 15px;
+}
