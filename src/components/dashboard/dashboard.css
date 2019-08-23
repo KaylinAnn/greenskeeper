@@ -4,7 +4,22 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  /* background: rgba(255, 255, 255, 0.972); */
+}
+
+.add-plant-container{
+  /* margin: 30px; */
+  margin-top: 30px;
+  text-align: right;
+}
+
+.add-plant-button{
+  height: 10%;
+  width: 10%;
+  font-size: 30px;
+  background: #ffa5b1;
+  border: none;
+  border-radius: 50%;
+  color: white;
 }
 
 .temp-and-humidity-container{
@@ -17,15 +32,11 @@
   font-family: 'Six Caps', sans-serif;
   letter-spacing: 1px;
   text-align: center;
-  /* font-family: 'Marvel', sans-serif; */
   width: 50%;
   margin: 20px;
   font-size: 60px;
-  /* background: rgb(58, 156, 58) */
 }
 .humidity-container{
-  /* font-family: 'Wire One', sans-serif; */
-  /* font-family: 'Marvel', sans-serif; */
   font-family: 'Six Caps', sans-serif;
   letter-spacing: 1px;
   font-size: 30px;
@@ -34,8 +45,14 @@
 }
 .humidity{
   width: 50%;
-  /* font-family: 'Marvel', sans-serif; */
-    font-size: 60px;
+  font-size: 60px;
   text-align: center
-  /* background: darkblue */
+
+}
+
+.moisture-label{
+  margin-top: 50px;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
 }

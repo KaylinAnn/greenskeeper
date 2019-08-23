@@ -10,11 +10,12 @@ function Dashboard() {
 
   // })
 
-
-
   return (
     <div className='dashboard-container'>
       <div className='dashboard'>
+        <div className='add-plant-container'>
+          <button className='add-plant-button'>+</button>
+        </div>
         <div className='temp-and-humidity-container'>
           <div className='humidity-container'>
             <div className='humidity'>{humidity}%</div>
@@ -23,7 +24,7 @@ function Dashboard() {
           <div className='temp'><Temp /></div>
         </div>
         <div className='plant-moisture-container'>
-
+          <div className='moisture-label'>MOISTURE</div>
         </div>
       </div>
     </div>
