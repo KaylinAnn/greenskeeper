@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import Temp from '../temp/temp'
 import Moisture from '../moisture/moisture'
+import AddPlant from '../adminAddPlant/adminAddPlant'
 import './dashboard.css'
 
 function Dashboard() {
 
   const [humidity, setHumidity] = useState(35)
+  const [addPlantToggle, setToggle] = useState(false)
 
   // useEffect(() => {
 
@@ -15,7 +17,11 @@ function Dashboard() {
     <div className='dashboard-container'>
       <div className='dashboard'>
         <div className='add-plant-container'>
-          <button className='add-plant-button'>+</button>
+          {addPlantToggle === false ?
+            <div></div> :
+            <AddPlant />
+          }
+          <button onClick={addPlantToggle === false ? () => setToggle(true) : () => setToggle(false)} className='add-plant-button'>{addPlantToggle === false ? '+' : 'x'}</button>
         </div>
         <div className='temp-and-humidity-container'>
           <div className='humidity-container'>

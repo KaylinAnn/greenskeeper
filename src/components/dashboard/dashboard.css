@@ -16,16 +16,20 @@
   height: 10%;
   width: 10%;
   font-size: 30px;
-  background: #ffa5b1;
+  background: #edc7b4;
   border: none;
   border-radius: 50%;
   color: white;
 }
 
 .temp-and-humidity-container{
+  margin-top: 5px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center
+  align-items: center;
+  background: white;
+  /* border: solid 1px #a6c799; */
+  border-radius: 5px;
 }
 
 .temp{
@@ -58,6 +62,10 @@
 }
 
 .moisture-container{
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  /* border: solid 1px #a6c799; */
   height: 100%;
   width: 85vw;
 }

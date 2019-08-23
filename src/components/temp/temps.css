@@ -26,7 +26,7 @@
 }
 .onoffswitch-inner:after {
   content: "TODAY'S AVG";
-  padding-right: 10px;
+  padding-right: 30px;
   background-color: #EDC7B4; color: #999999;
   text-align: right;
 }
@@ -34,7 +34,7 @@
   display: block; width: 30px; margin: 2px;
   background: #FFFFFF;
   position: absolute; top: 0; bottom: 0;
-  right: 101px;
+  right: 0px;
   border: 2px solid #999999; border-radius: 20px;
   transition: all 0.3s ease-in 0s; 
 }
