@@ -1,0 +1,46 @@
+.onoffswitch {
+  position: relative; width: 135px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 25px; color: white;   font-family: 'Six Caps', sans-serif; letter-spacing: 2px;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "CURRENT";
+  padding-left: 30px;
+  background-color: #8dc8b4; color: #FFFFFF;
+  text-align: left;
+}
+.onoffswitch-inner:after {
+  content: "TODAY'S AVG";
+  padding-right: 10px;
+  background-color: #EDC7B4; color: #999999;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block; width: 30px; margin: 2px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 101px;
+  border: 2px solid #999999; border-radius: 20px;
+  transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}
