@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './moisture.css'
 
+
 function Moisture() {
 
   // const [] = useState()
@@ -8,15 +9,19 @@ function Moisture() {
   // useEffect(() => {
 
   // })
-  const arr = ['Spider Plant', 'Gold Dust', 'Cactus', 'blahblah', 'someplant']
+  const plants = [{ name: 'Spider Plant', img: 'https://res.cloudinary.com/dclawygaw/image/upload/v1566857919/022-botanic.png' }, { name: 'Gold Dust', img: 'https://res.cloudinary.com/dclawygaw/image/upload/v1566857920/005-basil.png' }, { name: 'Cactus', img: 'https://res.cloudinary.com/dclawygaw/image/upload/v1566857920/011-botanic.png' }, { name: 'Monstara', img: 'https://res.cloudinary.com/dclawygaw/image/upload/v1566857921/033-botanic.png' }, { name: 'Peace Lily', img: 'https://res.cloudinary.com/dclawygaw/image/upload/v1566857920/004-anthurium.png' }]
 
-  const allPlants = arr.map(plant => {
+
+  const allPlants = plants.map(plant => {
     return (
       <div className='moisture'>
         <div className='mapped-plants'>
           |
         </div>
-        <div className='plant-name'>{plant}</div>
+        <div className='plant-title-container'>
+          <img className='plant-icon' src={plant.img} alt="plant icon" />
+          <div className='plant-name'>{plant.name}</div>
+        </div>
       </div>
     )
   })

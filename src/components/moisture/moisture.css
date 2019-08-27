@@ -13,3 +13,18 @@
   border: 1px solid black;
   border-radius: 15px;
 }
+
+.plant-icon {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+}
+
+.plant-title-container{
+  display: flex;
+}
+
+.plant-name{
+  margin: 8px 3px;
+  font-size: 20px;
+}

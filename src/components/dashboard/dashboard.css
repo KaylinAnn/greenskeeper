@@ -1,25 +1,145 @@
-.dashboard-container{
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  /* background: rgb(255, 255, 255); */
+  height: 100vh;
+  width: 100vw;
+  letter-spacing: 1px;
+  /* font-family: 'Six Caps', sans-serif; */
+}
+
+.banner-container {
+  background: rgb(105, 223, 154);
+  box-shadow: 7px 0px 7px rgb(83, 83, 83);
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  align-items: center;
+}
+
+.banner-label{
+  /* background: orangered; */
+  width: 80%;
+  height: 60%;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+.menu-container{
+  /* background: palegreen; */
+  display: flex;
+  width: 95%;
+  height: 40%;
+  font-size: 20px
+}
+
+.dashboard-button{
+  padding-top: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.monthly-button{
+  padding-top: 20px;
+  width: 50%;
+  text-align: center;
+  border-left: 2px solid rgb(151, 181, 192);
+}
+
+.body-container{
+  /* background: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.temp-and-humidity-container{
+  background: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  height: 30%;
+  margin: auto 0;
+  box-shadow: 5px 5px 7px rgb(156, 156, 156);
+  border-radius: 2px;
+}
+
+.humidity-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.humidity{
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Six Caps', sans-serif;
+}
+
+.humidity-label{
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Six Caps', sans-serif;
+}
+
+.temp{
+  /* background: teal; */
+  width: 50%;
+  font-family: 'Six Caps', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 20px;
+  font-size: 60px;
+}
+
+.moisture-contaianer{
+  display: flex;
+  flex-direction: column;
+  /* background: magenta; */
+  height: 60%;
+  width: 100%;
+  margin: auto 0
+}
+
+.moisture-label-and-add-container{
+  /* background: rebeccapurple; */
+  width: 100%;
+  display: flex;
+}
+
+.moisture-label{
+  /* background: gold; */
+  width: 70%;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.add-plant-container{
+  /* background: darkcyan; */
+  width: 30%;
+}
+
+.moisture-graphs-container{
+padding: 0px 5px;
+width: 100%;
+background: rgb(255, 255, 255);
+border-radius: 2px;
+box-shadow: 5px 5px 7px rgba(183, 194, 199, 0.63);
+}
+
+
+/* .dashboard-container{
   height: 100vh;
   width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-
-.add-plant-container{
-  /* margin: 30px; */
-  margin-top: 30px;
-  text-align: right;
-}
-
-.add-plant-button{
-  height: 10%;
-  width: 10%;
-  font-size: 30px;
-  background: #edc7b4;
-  border: none;
-  border-radius: 50%;
-  color: white;
 }
 
 .temp-and-humidity-container{
@@ -28,8 +148,8 @@
   justify-content: space-evenly;
   align-items: center;
   background: white;
-  /* border: solid 1px #a6c799; */
-  border-radius: 5px;
+  box-shadow: 5px 5px 7px rgba(183, 194, 199, 0.63);
+  border-radius: 2px;
 }
 
 .temp{
@@ -54,6 +174,10 @@
 
 }
 
+.label-container{
+  display: flex;
+}
+
 .moisture-label{
   margin-top: 50px;
   font-family: 'Six Caps', sans-serif;
@@ -64,8 +188,8 @@
 .moisture-container{
   padding: 10px;
   background: rgb(255, 255, 255);
-  border-radius: 5px;
-  /* border: solid 1px #a6c799; */
+  border-radius: 2px;
+  box-shadow: 5px 5px 7px rgba(183, 194, 199, 0.63);
   height: 100%;
   width: 85vw;
-}
+} */
