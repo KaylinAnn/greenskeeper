@@ -1,41 +1,39 @@
-/* .moisture{
+.moisture{
   display: flex;
   flex-direction: column;
-  background: forestgreen;
   width: 100%;
 }
 
-.icon-title-container{
+.one-moisture{
   display: flex;
   width: 100%;
-  background: palegreen;
 }
 
-.plant-icon {
-  height: 50px;
-  width: 50px;
-  margin: 2px;
+.icon-container{
+  width: 15%;
 }
 
 .plant-title-container{
-  display: flex;
-  flex-direction: column;
-  background: wheat;
+  width: 85%;
+}
+
+.plant-icon {
+  margin: 10px auto;
+  height: 55px;
+  width: 55px;
 }
 
 .mapped-plants{
-  margin-top: 25px;
+  margin: 10px auto 0 auto;
   font-size: 30px;
   text-align: center;
-  height: 5%;
   width: 100%;
   background-image: linear-gradient(to right, #ffffff8e, #afdfff, #40a9ff);
-  background-image: linear-gradient(to right, #fda796, #ff9f6d, #ffb468, #ffca68, #ffe06e, #f8ea71, #eff575, #e4ff7d, #cfff7f, #b8ff83, #9fff8a, #82ff92);
   border: 1px solid black;
   border-radius: 15px;
 }
 
 .plant-name{
-  margin: 8px 3px;
+  margin: 2px 5px;
   font-size: 20px;
-} */
+}
