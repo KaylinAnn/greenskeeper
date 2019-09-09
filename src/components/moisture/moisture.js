@@ -16,14 +16,19 @@ function Moisture() {
   const allPlants = plants.map(plant => {
     return (
       <div className='moisture'>
-        <img className='plant-icon' src={plant.img} alt="plant icon" />
-        <div className='plant-title-container'>
-          <div className='mapped-plants'>
-            |
-          </div>
-          <div className='plant-name'>{plant.name}</div>
-        </div>
+
       </div>
+      // <div className='moisture'>
+      //   <div className='icon-title-container'>
+      //     <img className='plant-icon' src={plant.img} alt="plant icon" />
+      //     <div className='plant-title-container'>
+      //       <div className='mapped-plants'>
+      //         |
+      //     </div>
+      //       <div className='plant-name'>{plant.name}</div>
+      //     </div>
+      //   </div>
+      // </div>
     )
   })
 

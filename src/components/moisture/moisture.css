@@ -1,19 +1,26 @@
-.moisture{
+/* .moisture{
   display: flex;
   flex-direction: column;
-  /* background: forestgreen; */
+  background: forestgreen;
   width: 100%;
 }
 
+.icon-title-container{
+  display: flex;
+  width: 100%;
+  background: palegreen;
+}
+
 .plant-icon {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   margin: 2px;
 }
 
 .plant-title-container{
   display: flex;
   flex-direction: column;
+  background: wheat;
 }
 
 .mapped-plants{
@@ -23,7 +30,7 @@
   height: 5%;
   width: 100%;
   background-image: linear-gradient(to right, #ffffff8e, #afdfff, #40a9ff);
-  /* background-image: linear-gradient(to right, #fda796, #ff9f6d, #ffb468, #ffca68, #ffe06e, #f8ea71, #eff575, #e4ff7d, #cfff7f, #b8ff83, #9fff8a, #82ff92); */
+  background-image: linear-gradient(to right, #fda796, #ff9f6d, #ffb468, #ffca68, #ffe06e, #f8ea71, #eff575, #e4ff7d, #cfff7f, #b8ff83, #9fff8a, #82ff92);
   border: 1px solid black;
   border-radius: 15px;
 }
@@ -31,4 +38,4 @@
 .plant-name{
   margin: 8px 3px;
   font-size: 20px;
-}
+} */

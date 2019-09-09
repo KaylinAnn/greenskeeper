@@ -121,7 +121,7 @@
   /* background: rebeccapurple; */
   width: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .moisture-label{
@@ -133,8 +133,19 @@
 }
 
 .add-plant-container{
-  /* background: darkcyan; */
-  width: 30%;
+  position: absolute;
+  right: 12%;
+  margin: 8px 0;
+}
+
+.add-plant-button{
+  background: rgb(255, 149, 148);
+  border: none;
+  border-radius: 45%;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  font-weight: lighter;
 }
 
 .moisture-graphs-container{
