@@ -1,77 +1,87 @@
 .dashboard{
   display: flex;
   flex-direction: column;
-  /* background: rgb(255, 255, 255); */
+  background-image: url('https://res.cloudinary.com/dclawygaw/image/upload/v1567106813/clouds-33139_1280.png');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
-  font-size: 15px;
-  font-family: 'Poppins', sans-serif;
 }
 
-.banner-container {
-  background: #AAF683;
-  box-shadow: 7px 0px 7px rgb(83, 83, 83);
+.banner-container{
   display: flex;
-  flex-direction: column;
-  height: 20%;
-  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 100%;
+  height: 6%;
 }
 
 .banner-label{
-  /* background: orangered; */
-  width: 80%;
-  height: 60%;
-  text-align: center;
-  font-size: 50px;
-  padding-top: 15px;
   font-family: 'Six Caps', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  width: 50%;
+  height: 100%;
+  text-align: center;
 }
 
 .menu-container{
-  /* background: palegreen; */
-  display: flex;
-  width: 95%;
-  height: 40%;
-  font-size: 20px
+  width: 50%;
+  height: 100%;
+  margin: 2px;
+}
+
+.more-button{
+  float: right;
+  background: none;
+  border: none;
+  background-image: url('../../icons/001-menu.png');
+  background-position: center;
+  background-size: cover;
+  height: 65%;
+  width: 25px;
+  margin: 5px;
 }
 
 .dashboard-button{
-  padding-top: 20px;
-  width: 50%;
-  text-align: center;
-}
-
-.monthly-button{
-  padding-top: 20px;
-  width: 50%;
-  text-align: center;
-  border-left: 2px solid rgb(151, 181, 192);
+  float: right;
+  background: none;
+  border: none;
+  background-image: url('../../icons/002-home-page.png');
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width: 30px;
+  margin-right: 10px;
 }
 
 .body-container{
-  /* background: blueviolet; */
+  /* background: rgba(169, 169, 169, 0.705); */
   display: flex;
   flex-direction: column;
-  height: 80%;
-  width: 85%;
+  height: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .temp-and-humidity-container{
-  background: rgb(255, 255, 255);
+  background: rgba(128, 128, 128, 0.623);
   display: flex;
-  width: 100%;
-  height: 30%;
-  margin: auto 0;
-  box-shadow: 5px 5px 7px rgb(156, 156, 156);
-  border-radius: 2px;
+  width: 85%;
+  height: 25%;
+  margin: auto;
+  color:white;
+  box-shadow: 5px 5px 10px rgba(182, 182, 182, 0.418);
+  border-radius: 10px;
 }
 
 .humidity-container{
+  /* background: rgb(109, 238, 238); */
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 25px;
+  margin: auto;
 }
 
 .humidity{
@@ -94,7 +104,7 @@
   font-family: 'Six Caps', sans-serif;
   letter-spacing: 1px;
   text-align: center;
-  margin: 20px;
+  margin: auto;
   font-size: 60px;
 }
 
@@ -104,13 +114,14 @@
   /* background: magenta; */
   height: 60%;
   width: 100%;
-  margin: auto 0
+  margin-bottom: 0;
 }
 
 .moisture-label-and-add-container{
   /* background: rebeccapurple; */
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 .moisture-label{
@@ -127,70 +138,13 @@
 }
 
 .moisture-graphs-container{
-padding: 0px 5px;
-width: 100%;
-background: rgb(255, 255, 255);
-border-radius: 2px;
-box-shadow: 5px 5px 7px rgba(183, 194, 199, 0.63);
+  padding: 0px 5px;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-
-/* .dashboard-container{
-  height: 100vh;
-  width: 85%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent; 
 }
-
-.temp-and-humidity-container{
-  margin-top: 5px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background: white;
-  box-shadow: 5px 5px 7px rgba(183, 194, 199, 0.63);
-  border-radius: 2px;
-}
-
-.temp{
-  font-family: 'Six Caps', sans-serif;
-  letter-spacing: 1px;
-  text-align: center;
-  width: 50%;
-  margin: 20px;
-  font-size: 60px;
-}
-.humidity-container{
-  font-family: 'Six Caps', sans-serif;
-  letter-spacing: 1px;
-  font-size: 30px;
-  font-weight: 500;
-  margin: 50px 50px;
-}
-.humidity{
-  width: 50%;
-  font-size: 60px;
-  text-align: center
-
-}
-
-.label-container{
-  display: flex;
-}
-
-.moisture-label{
-  margin-top: 50px;
-  font-family: 'Six Caps', sans-serif;
-  font-size: 50px;
-  letter-spacing: 1px;
-}
-
-.moisture-container{
-  padding: 10px;
-  background: rgb(255, 255, 255);
-  border-radius: 2px;
-  box-shadow: 5px 5px 7px rgba(183, 194, 199, 0.63);
-  height: 100%;
-  width: 85vw;
-} */

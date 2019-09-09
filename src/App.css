@@ -24,7 +24,7 @@ display: block;
 }
 body {
 line-height: 1;
-background: #ffffff;
+background: linear-gradient(0deg, rgba(227,255,255,1) 53%, rgba(0,173,255,1) 100%);
 }
 ol, ul {
 list-style: none;
