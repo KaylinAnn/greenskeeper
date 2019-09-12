@@ -3,6 +3,7 @@ import Temp from '../temp/temp'
 import Moisture from '../moisture/moisture'
 import AddPlant from '../adminAddPlant/adminAddPlant'
 import './dashboard.css'
+import { Link } from 'react-router-dom'
 
 function Dashboard() {
 
@@ -16,10 +17,10 @@ function Dashboard() {
   return (
     <div className='dashboard'>
       <div className='banner-container'>
-        <h1 className='banner-label'>Plant Dashboard</h1>
+        <Link className='banner-label cursor' to='/'>Plant Dashboard</Link>
         <div className='menu-container'>
-          <button className='more-button'></button>
-          <button className='dashboard-button'></button>
+          <Link to='/more' className='more-button cursor'></Link>
+          <Link to='/' className='dashboard-button cursor'></Link>
         </div>
       </div>
       <div className='body-container'>

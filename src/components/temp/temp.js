@@ -11,12 +11,16 @@ function Temp() {
   useEffect(() => {
     getFullDayAvrgTemp()
     getCurrHourAvrgTemp()
+
   })
 
   function getFullDayAvrgTemp() {
     let date = jsonDate.split('T')[0]
     let startDay = date + 'T00:00:00.000Z'
     let endDay = date + 'T23:59:59.999Z'
+
+    console.log(startDay, endDay);
+
 
     axios.post('/api/alltemps', { startDay, endDay })
 
@@ -51,6 +55,9 @@ function Temp() {
         })
         let sum = allTemps.reduce((acc, c) => acc + c, 0)
         let avrg = Math.round(sum / allTemps.length)
+        console.log(allTemps);
+
+
         setHrTemp(avrg)
       })
       .catch(err => {
@@ -60,11 +67,11 @@ function Temp() {
 
   return (
     <div>
-      <div class="onoffswitch">
-        <input onClick={toggleTemps === true ? () => setToggle(false) : () => setToggle(true)} type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" defaultChecked />
-        <label class="onoffswitch-label" for="myonoffswitch">
-          <span class="onoffswitch-inner"></span>
-          <span class="onoffswitch-switch"></span>
+      <div className="onoffswitch">
+        <input onClick={toggleTemps === true ? () => setToggle(false) : () => setToggle(true)} type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" defaultChecked />
+        <label className="onoffswitch-label" htmlFor="myonoffswitch">
+          <span className="onoffswitch-inner"></span>
+          <span className="onoffswitch-switch"></span>
         </label>
       </div>
       <div>

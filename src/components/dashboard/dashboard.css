@@ -24,13 +24,21 @@
   width: 50%;
   height: 100%;
   text-align: center;
+  text-decoration: none;
+  color: black;
 }
+
+
 
 .menu-container{
   width: 50%;
   height: 100%;
   margin: 2px;
 }
+
+/* .cursor:hover{
+  cursor: pointer;
+} */
 
 .more-button{
   float: right;

@@ -15,7 +15,7 @@ function Moisture() {
 
   const allPlants = plants.map(plant => {
     return (
-      <div className='one-moisture'>
+      <div className='one-moisture' key={plant.name}>
         <div className='icon-container'>
           <img className='plant-icon' src={plant.img} alt="plant icon" />
         </div>
