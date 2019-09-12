@@ -11,6 +11,20 @@ module.exports = {
         console.log(err);
         res.status(500).send('error')
       })
+  },
+
+  readMoisture: (req, res) => {
+    const db = req.app.get('db')
+
+    db.get_moisture()
+      .then((moisture) => {
+        res.status(200).send(moisture)
+      })
+      .catch(err => {
+        console.log(err);
+        res.send(500).send('error')
+
+      })
   }
 
 }

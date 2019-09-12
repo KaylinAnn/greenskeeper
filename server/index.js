@@ -9,6 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.post('/api/alltemps', controller.readAllTemps)
+app.get('/api/moisture', controller.readMoisture)
 
 const uri = process.env.CONNECTION_STRING
 massive(uri)

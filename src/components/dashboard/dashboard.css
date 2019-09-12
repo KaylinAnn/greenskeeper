@@ -154,6 +154,7 @@
   height: 35px;
   font-size: 30px;
   font-weight: lighter;
+  outline: none
 }
 
 .moisture-graphs-container{

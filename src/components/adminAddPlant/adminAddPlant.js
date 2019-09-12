@@ -15,7 +15,6 @@ function AdminAddPlant() {
     } else {
       return alert('Incorrect Username and Password.')
     }
-
   }
 
 
