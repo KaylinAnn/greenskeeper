@@ -10,9 +10,7 @@ function Dashboard() {
   const [humidity, setHumidity] = useState(35)
   const [addPlantToggle, setToggle] = useState(false)
 
-  // useEffect(() => {
 
-  // })
 
   return (
     <div className='dashboard'>
