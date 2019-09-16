@@ -49,7 +49,7 @@ function Moisture() {
         </div>
         <div className='plant-title-container'>
           <div className='mapped-plants'>
-            |
+            <h1 className={moistureDialClassName()}>|</h1>
           </div>
           <div className='plant-name'>{plant.name}</div>
         </div>
