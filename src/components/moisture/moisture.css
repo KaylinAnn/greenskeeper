@@ -26,9 +26,8 @@
 .mapped-plants{
   margin: 10px auto 0 auto;
   font-size: 30px;
-  text-align: center;
   width: 100%;
-  background-image: linear-gradient(to right, #ffffff8e, #afdfff, #40a9ff);
+  background-image: linear-gradient(to right, #ffffff8e, #6fb6e6, #3299ee);
   border: 1px solid black;
   border-radius: 15px;
 }
@@ -39,9 +38,55 @@
 }
 
 .one{
-  color: rgb(236, 0, 177);
+  margin-left: 0;
 }
 
 .two{
-  color:palegreen;
+  margin-left: 9%;
 }
+
+.three{
+  margin-left: 18%;
+}
+
+.four{
+  margin-left: 27%;
+}
+
+.five{
+  margin-left: 36%;
+}
+
+.six{
+  margin-left: 45%;
+}
+
+.seven{
+  margin-left: 54%;
+}
+
+.eight{
+  margin-left: 63%;
+}
+
+.nine{
+  margin-left: 72%;
+}
+
+.ten{
+  margin-left: 81%;
+}
+
+.eleven{
+  margin-left: 90%;
+}
+
+.bar{
+  background-image: url('../../icons/003-drop.png');
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: none;
+}
+

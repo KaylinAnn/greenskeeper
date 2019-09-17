@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Temp from '../temp/temp'
 import Moisture from '../moisture/moisture'
 import AddPlant from '../adminAddPlant/adminAddPlant'
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 function Dashboard() {
 
-  const [humidity, setHumidity] = useState(35)
+  const [humidity] = useState(35)
   const [addPlantToggle, setToggle] = useState(false)
 
 

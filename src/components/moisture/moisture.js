@@ -5,7 +5,7 @@ import Axios from 'axios';
 
 function Moisture() {
 
-  const [moisture, setMoisture] = useState([])
+  const [moisture, setMoisture] = useState()
 
   let jsonDate = (new Date()).toJSON()
 
@@ -16,25 +16,49 @@ function Moisture() {
   function setMoistureState() {
     Axios.get('/api/moisture')
       .then((res) => {
+
         let todaysMoistures = []
-        res.data.map(moisture => {
-          if (moisture.date.split('T')[0] === jsonDate.split('T')[0]) {
+        res.data.forEach((moisture) => {
+          if (moisture.date.split('T')[0] === '2019-09-18') {
+            console.log(jsonDate.split('T')[0]);
+
             todaysMoistures.push(moisture.value)
           }
         })
+        console.log(todaysMoistures);
+
         let sum = todaysMoistures.reduce((acc, c) => acc + c, 0)
         let avgMoisture = Math.round(sum / todaysMoistures.length)
         console.log(avgMoisture);
 
         setMoisture(avgMoisture)
+
       })
   }
 
   function moistureDialClassName() {
-    if (moisture > 600) {
-      return 'one'
-    } else if (moisture < 600 && moisture > 500) {
-      return 'two'
+    if (moisture >= 500 && moisture < 550) {
+      return 'one bar'
+    } else if (moisture >= 550 && moisture < 600) {
+      return 'two bar'
+    } else if (moisture >= 600 && moisture < 650) {
+      return 'three bar'
+    } else if (moisture >= 650 && moisture < 700) {
+      return 'four bar'
+    } else if (moisture >= 700 && moisture < 750) {
+      return 'five bar'
+    } else if (moisture >= 750 && moisture < 800) {
+      return 'six bar'
+    } else if (moisture >= 800 && moisture < 850) {
+      return 'seven bar'
+    } else if (moisture >= 850 && moisture < 900) {
+      return 'eight bar'
+    } else if (moisture >= 900 && moisture < 950) {
+      return 'nine bar'
+    } else if (moisture >= 950 && moisture < 1000) {
+      return 'ten bar'
+    } else if (moisture >= 1000 && moisture < 1500) {
+      return 'eleven bar'
     }
   }
 
@@ -49,7 +73,7 @@ function Moisture() {
         </div>
         <div className='plant-title-container'>
           <div className='mapped-plants'>
-            <h1 className={moistureDialClassName()}>|</h1>
+            <h1 className={moistureDialClassName()}></h1>
           </div>
           <div className='plant-name'>{plant.name}</div>
         </div>

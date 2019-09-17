@@ -19,14 +19,12 @@ function Temp() {
     let startDay = date + 'T00:00:00.000Z'
     let endDay = date + 'T23:59:59.999Z'
 
-    console.log(startDay, endDay);
-
 
     axios.post('/api/alltemps', { startDay, endDay })
 
       .then((res) => {
         let allTemps = []
-        res.data.map(temp => {
+        res.data.forEach(temp => {
           if (temp.value < 125) {
             return allTemps.push(temp.value)
           }
@@ -48,15 +46,13 @@ function Temp() {
     axios.post('/api/alltemps', { startDay, endDay })
       .then((res) => {
         let allTemps = []
-        res.data.map(temp => {
+        res.data.forEach(temp => {
           if (temp.value < 125) {
             return allTemps.push(temp.value)
           }
         })
         let sum = allTemps.reduce((acc, c) => acc + c, 0)
         let avrg = Math.round(sum / allTemps.length)
-        console.log(allTemps);
-
 
         setHrTemp(avrg)
       })
