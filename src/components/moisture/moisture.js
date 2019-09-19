@@ -7,7 +7,8 @@ function Moisture() {
 
   const [moisture, setMoisture] = useState()
 
-  let jsonDate = (new Date()).toJSON()
+  let d = new Date()
+  const months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']
 
   useEffect(() => {
     setMoistureState()
@@ -16,13 +17,13 @@ function Moisture() {
   function setMoistureState() {
     Axios.get('/api/moisture')
       .then((res) => {
-
+        let date = d.getFullYear() + '-' + (months[d.getMonth()]) + '-' + (d.getDate() + 1)
         let todaysMoistures = []
         res.data.forEach((moisture) => {
-          if (moisture.date.split('T')[0] === '2019-09-18') {
-            console.log(jsonDate.split('T')[0]);
-
+          if (moisture.date.split('T')[0] === date) {
             todaysMoistures.push(moisture.value)
+            console.log(moisture.date);
+
           }
         })
         console.log(todaysMoistures);
