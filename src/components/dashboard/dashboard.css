@@ -9,63 +9,7 @@
   width: 100vw;
 }
 
-.banner-container{
-  display: flex;
-  justify-content: center;
-  background: white;
-  width: 100%;
-  height: 6%;
-}
-
-.banner-label{
-  font-family: 'Six Caps', sans-serif;
-  font-size: 40px;
-  letter-spacing: 1px;
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-
-
-
-.menu-container{
-  width: 50%;
-  height: 100%;
-  margin: 2px;
-}
-
-/* .cursor:hover{
-  cursor: pointer;
-} */
-
-.more-button{
-  float: right;
-  background: none;
-  border: none;
-  background-image: url('../../icons/001-menu.png');
-  background-position: center;
-  background-size: cover;
-  height: 65%;
-  width: 25px;
-  margin: 5px;
-}
-
-.dashboard-button{
-  float: right;
-  background: none;
-  border: none;
-  background-image: url('../../icons/002-home-page.png');
-  background-position: center;
-  background-size: cover;
-  height: 80%;
-  width: 30px;
-  margin-right: 10px;
-}
-
 .body-container{
-  /* background: rgba(169, 169, 169, 0.705); */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -85,7 +29,6 @@
 }
 
 .humidity-container{
-  /* background: rgb(109, 238, 238); */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -107,7 +50,6 @@
 }
 
 .temp{
-  /* background: teal; */
   width: 50%;
   font-family: 'Six Caps', sans-serif;
   letter-spacing: 1px;
@@ -119,21 +61,17 @@
 .moisture-contaianer{
   display: flex;
   flex-direction: column;
-  /* background: magenta; */
   height: 60%;
   width: 100%;
   margin-bottom: 0;
 }
 
 .moisture-label-and-add-container{
-  /* background: rebeccapurple; */
   width: 100%;
   display: flex;
-  /* flex-direction: column; */
 }
 
 .moisture-label{
-  /* background: gold; */
   width: 70%;
   font-family: 'Six Caps', sans-serif;
   font-size: 50px;
